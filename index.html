@@ -10,10 +10,10 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
 this.myFunction();
 
-$('#myCanvas').addEventListener("click", myFunction);
+$('#myCanvas').addEventListener("mouseover", myFunction);
 
 function myFunction() {
-    var c = $('#myCanvas');
+    var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.clearRect(0,0,c.width,c.height);
     ctx.beginPath();
